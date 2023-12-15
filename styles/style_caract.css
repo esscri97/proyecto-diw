@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    font-family: inter;
+}
+
+.pagina{
+    display: grid;
+}
+
+.menu{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+/* Cabecera */
+.cabecera{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 80%;
+}
+
+.cabecera .movil{
+    background: url(../imagenes/tank-cab-fin.png) no-repeat;
+    background-size: cover;
+}
+
+/* Grilla */
+.fondo-grilla{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.grilla{
+    width: 90%;
+    height: 80vh;
+    gap: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.grilla .grilla-arriba{
+    grid-column: span 2;
+    grid-row: 1;
+    background: url(../imagenes/grilla-arriba1.jpg) no-repeat 0px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.grilla .grilla-ab-izq{
+    grid-column: 1;
+    grid-row: 2;
+    background: url(../imagenes/grilla-abajo-izq.jpg) no-repeat 0px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.grilla .grilla-ab-drcha{
+    grid-column: 2;
+    grid-row: 2;
+    background: url(../imagenes/grilla-abajo-drcha.jpg) no-repeat 0px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.caracteristica{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    margin-top: 60px;
+}
+
+.caracteristica .texto{
+    height: 50%;
+    padding: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 80% 20%;
+    margin-top: 15%;
+}
+
+.texto p{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.colores{
+    width: 100%;
+    display: grid;
+    gap: 10%;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    
+}
+
+.colores .negro{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.colores .amarillo{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 0, 0.5);
+    border: 5px solid yellow;
+    border-radius: 50%;
+}
+
+.colores .rojo{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 5px solid red;
+    border-radius: 50%;
+}
+
+.caracteristica .imagen{
+    background: url('../imagenes/tank-negro.png') no-repeat 0px;
+    background-size: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rojo:hover ~ .caracteristica .imagen{
+    background: url('../imagenes/tank-rojo.png') no-repeat 0px;
+}
+
+.amarillo:hover{
+    background: url('../imagenes/tank-amarillo.png') no-repeat 0px;
+}
+
+
+.random-imgs{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.img1{
+    background: url(../imagenes/luz.jpg) no-repeat 0px;
+    background-size: cover;
+    margin: 40px;
+    border-radius: 8%;
+}
+
+.img2{
+    background: url(../imagenes/projector.jpg) no-repeat 0px;
+    background-size: cover;
+    margin: 40px;
+    border-radius: 8%;
+}
+
+.img3{
+    background: url(../imagenes/battery.jpg) no-repeat 0px;
+    background-size: cover;
+    margin: 40px;
+    border-radius: 8%;
+}
+
+.img4{
+    background: url(../imagenes/memory.jpg) no-repeat 0px;
+    background-size: cover;
+    margin: 40px;
+    border-radius: 8%;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    bottom: 0;
+    background-color: #444;
+}
