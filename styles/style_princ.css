@@ -3,15 +3,99 @@ body{
     font-family: inter;
 }
 
+/* cabecera css */
+.cabecera-menu {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 7fr 3fr;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    background-color: black;
+   
+
+}
+
+.enlaces {
+    grid-column: 2/3;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1em;
+
+}
+
+a:hover{
+    color: lightgrey;
+
+}
+
+.iconos-contenedor {
+    grid-column: 3/4;   
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 1em;
+    align-items: center;
+    background-color: lightgray;
+    display: flex;
+    justify-content:center;
+
+
+}
+
+.lupa {
+    grid-column: 1/2;
+    width: 28px;
+    height: 28px;
+    
+}
+
+.input-busca {
+    grid-column: 2/3;
+    width: 100%;
+    height: 28px;
+    border-radius: 20px;
+    border: 0;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.cesta{
+    grid-column: 3/4;
+    width: 28px;
+    height: 28px;
+    
+}
+
+
+
+.logo-img {
+
+    width: 100%;
+
+}
+ /* fin cabecera css */
+
+
 .pagina{
     display: grid;
 }
 
-.menu{
-    width: 100vw;
-    height: 10vh;
-    background-color: black;
-}
 
 .cabecera1{
     width: 100vw;
@@ -25,7 +109,7 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: repeat(2, 600px);
+    grid-template-rows: repeat(2, 500px);
 }
 
 .texto{
@@ -34,6 +118,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 
 .texto button{
@@ -46,7 +131,7 @@ body{
 }
 
 .imagen{
-    padding: 50px 100px 20px 100px;
+    padding: 0.5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +145,8 @@ body{
 
 .final_1{
     width: 100vw;
-    padding: 30px 20px 50px 20px;
+    padding-top: 20px; 
+    padding-bottom: 40px; 
     background-color: #f5f5f5;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -102,4 +188,52 @@ body{
     width: 100vw;
     height: 300px;
     background-color: #444;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .cabecera-menu {
+        grid-template-columns: 1fr 1fr 3fr;
+    }
+
+    .enlaces {
+        grid-template-columns: 2/3;
+    }
+
+    .iconos-contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .input-busca {
+        width: 80%;
+    }
+
+    .caracteristicas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 400px);
+    }
+
+    .texto {
+        padding: 20px;
+    }
+
+    .imagen img {
+        width: 90%;
+    }
+
+    .img-final{
+        width: 50%;
+    }
+
+    .final_1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .final_1 h1 {
+        margin: 10px;
+    }
 }
